@@ -1,0 +1,8 @@
+         <ul class="comments_lists">
+          <%# 投稿に紐づくコメントを一覧する処理を記述する %>
+            <li class="comments_list">
+              <%= comment.text %>
+              <%= link_to "(#{comment.user.name})","/users/#{comment.user.id}", class: :comment_user %>
+            </li>
+          <%# // 投稿に紐づくコメントを一覧する処理を記述する %>
+            </ul>
